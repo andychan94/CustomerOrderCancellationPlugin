@@ -2,8 +2,7 @@
 
 {% if can_customer_cancel_order(data) %}
     <form action="{{ path }}" method="POST">
-        <button class="button ui labeled icon yellow" id="cancel">
-            <i class="icon {{ action.options.icon|default('undo alternative') }}" ></i>
+        <button class="button is-warning" id="cancel">
             {{ action.label|trans }}
         </button>
     </form>
